@@ -24,7 +24,7 @@ export class ProductController {
 
   async findOne(req: Request, res: Response) {
     try {
-      const product = await this.productService.findOne(req.params.id);
+      const product = await this.productService.findProductById(req.params.id);
       if (!product) {
         return res.status(404).json({ message: "Product not found" });
       }

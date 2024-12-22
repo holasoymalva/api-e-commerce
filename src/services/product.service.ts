@@ -1,6 +1,6 @@
 import { getRepository } from "typeorm";
 import { Product } from "../models/product.model";
-import { NotFoundError } from "../utils/errors";
+import { NotFoundError } from "../utils/response";
 import { logger } from "../utils/logger";
 
 export class ProductService {
